@@ -1,5 +1,5 @@
 ---
-title: "Contact me"
+title: "Projects"
 template: "page"
 ---
 

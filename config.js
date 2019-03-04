@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  url: 'https://www.kurtisharms.com',
+  title: 'Personal website of Kurtis Harms',
+  subtitle: 'I\'m a future lawyer and mechanical engineer making the very most out of life in Vancouver, Canada. All views expressed on this website are my own.',
+  copyright: '© 2019 Kurtis Harms',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-59880593-1',
   menu: [
     {
       label: 'Articles',
@@ -18,19 +18,23 @@ module.exports = {
       path: '/pages/about'
     },
     {
+      label: 'Personal projects',
+      path: '/pages/projects'
+    },
+    {
       label: 'Contact me',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Kurtis Harms',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'I\'m a future lawyer and mechanical engineer making the very most out of life in Vancouver, Canada. All views expressed on this website are my own.',
     contacts: {
-      email: '#',
+      email: 'emailkurtis@gmail.com',
       telegram: '#',
-      twitter: '#',
-      github: '#',
+      twitter: 'https://twitter.com/kurtisharms',
+      github: 'https://github.com/kurtisharms',
       rss: '#',
       vkontakte: '#'
     }
