@@ -25,15 +25,15 @@ Now, as I mentioned above, the popular Sakis3G script didn’t work for me. Inst
 Now, just as a little disclaimer, I don't take any responsibility for any of the following instructions; they are pretty straightforward, and I don't think they should cause any problems with your carrier... but nonetheless, since Linux is usually not carrier-supported, use at your own risk! The important thing, as outlined later on in the instructions, is getting your APN correctly setup, so that you don't get billed outside of your data plan!
 
 With that out of the way, let's get started! First, install the following packages:
-sudo apt-get install lsusb ppp usb-modeswitch wvdial sg3-utils
+`sudo apt-get install lsusb ppp usb-modeswitch wvdial sg3-utils`
 
 Now, plug in your Huawei E3276 and run the command “lsusb”, which should list all of your usb devices. Look down the list, and make sure that your modem is hooked up. Every 3G/4G/LTE modem has two modes, one for storage/miscellaneous use, and one for modem mode. We need the E3276 to be set in the latter mode, and sometimes this isn’t automatic. Just run the command "lsusb", and scroll down to see if your device is in the list, AND look for a line that looks something like this (yours may look different; the important part is that the description has "modem" in it! If it just says "Huawei Technologies Co.", then it hasn't switched into modem mode yet!):
 
-Bus 001 Device 006: ID 12d1:1506 Huawei Technologies Co., Ltd. E398 LTE/UMTS/GSM Modem/Networkcard
+`Bus 001 Device 006: ID 12d1:1506 Huawei Technologies Co., Ltd. E398 LTE/UMTS/GSM Modem/Networkcard`
 
 Okay, so assuming that you’ve verified that the E3276 is in Modem mode, time to go hands-on editing a few configuration files. I like using the nano editor… I know, I know… vi is the “real” programmer/linux editor, but this isn’t time for a flamewar.
 
-Edit the following file: /etc/wvdial.conf
+Edit the following file: `/etc/wvdial.conf`
 
 ```
 [Dialer Defaults]
@@ -50,10 +50,11 @@ Username = { }
 Password = { }
 Baud = 460800
 Auto Reconnect = on
-Important Note: You will need to change the "isp.telus.com" part to whatever your APN is for your provider! Also, make sure you use the correct APN: many providers have one APN for phones, and another APN for data-only plans. If you use the wrong APN with your SIM card, you will get charged for data outside of your plan... trust me, I learned that the hard way while setting this up!
 ```
 
-Okay, if you've got your APN setup correctly, now we just have to edit one more file: /etc/network/interfaces
+**Important Note:** You will need to change the "isp.telus.com" part to whatever your APN is for your provider! Also, make sure you use the correct APN: many providers have one APN for phones, and another APN for data-only plans. If you use the wrong APN with your SIM card, you will get charged for data outside of your plan... trust me, I learned that the hard way while setting this up!
+
+Okay, if you've got your APN setup correctly, now we just have to edit one more file: `/etc/network/interfaces`
 Append (not replace!) the following lines to the end of the file:
 
 ```
@@ -65,10 +66,10 @@ Now, all you have to do is type the following in the terminal! (You may have to 
 wvdial & disown
 
 And now you should be connected! To quickly test to see if it's working, just try pinging a server:
-ping google.com
+`ping google.com`
 
 Or if we want to get fancy with our internet browsing experience from the terminal, there's nothing quite like lynx (the world's best text-based terminal browser, in case you've never heard of it!):
-lynx google.com
+`lynx google.com`
 
 Finally, the Huawei E3276 has an indicator light on it that will probably be useful for verifying the connection state:
 
