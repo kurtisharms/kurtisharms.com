@@ -33,8 +33,8 @@ module.exports = {
     contacts: {
       email: 'emailkurtis@gmail.com',
       telegram: '#',
-      twitter: 'https://twitter.com/kurtisharms',
-      github: 'https://github.com/kurtisharms',
+      twitter: 'kurtisharms',
+      github: 'kurtisharms',
       rss: '#',
       vkontakte: '#'
     }
