@@ -5,7 +5,7 @@ module.exports = {
   title: 'Personal website of Kurtis Harms',
   subtitle: 'I\'m a future lawyer and mechanical engineer making the very most out of life in Vancouver, Canada. All views expressed on this website are my own.',
   copyright: '© 2019 Kurtis Harms',
-  disqusShortname: '',
+  disqusShortname: 'kurtisharms',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-59880593-1',
   menu: [
