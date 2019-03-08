@@ -62,8 +62,8 @@ auto ppp0
 iface ppp0 inet wvdial
 ```
 
-Now, all you have to do is type the following in the terminal! (You may have to use sudo, but try without first)
-wvdial & disown
+Now, all you have to do is type the following in the terminal: (You may have to use sudo, but try without first)
+`wvdial & disown`
 
 And now you should be connected! To quickly test to see if it's working, just try pinging a server:
 `ping google.com`
