@@ -148,6 +148,33 @@ figcaption {
   text-align: center;
 }
 
+table {
+  display: block;
+  font-size: $typographic-small-font-size;
+  line-height: $typographic-table-line-height;
+  width: 100%;
+  & tr {
+      &:nth-child(even) {
+          background-color: $color-table-tbody;
+      }
+  }
+  & th {
+      color: $color-base;;
+      background-color: $color-table-thead;
+      min-width: 80px;
+      padding: 0.5em;
+      border-bottom: 1px solid $color-gray;
+  }
+  & td {
+      text-align: left;
+      padding: 0.5em;
+  }
+  & img {
+      width: 15px;
+      height: 15px;
+  }
+}
+
 .anchor {
   margin-left: -30px !important;
   padding-right: 14px !important;

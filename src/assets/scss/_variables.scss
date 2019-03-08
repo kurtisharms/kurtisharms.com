@@ -27,6 +27,12 @@ $typographic-link-s-font-color: $color-secondary;
 
 $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
 
+// Tables
+$typographic-table-line-height: $typographic-base-line-height;
+$color-table-thead: $color-gray-bg;
+$color-table-tbody: $color-gray-bg;
+
+
 // Buttons
 $button-height: 35px;
 $button-border-radius: 20px;

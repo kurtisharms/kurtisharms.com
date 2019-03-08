@@ -73,10 +73,13 @@ Or if we want to get fancy with our internet browsing experience from the termin
 
 Finally, the Huawei E3276 has an indicator light on it that will probably be useful for verifying the connection state:
 
-Blue, blinking: 4G network available.
-Cyan, blinking: 4G LTE available.
-Blue, solid: Connected to a 4G network.
-Cyan, solid: Connected to a 4G LTE network.
+Color | Status | Meaning
+--- | --- | ---
+blue | blinking | 4G network available.
+cyan | blinking | 4G LTE available.
+blue | solid | Connected to a 4G network.
+cyan | solid | Connected to a 4G LTE network.
+
 Good luck using your Huawei 4G modem with Linux!
 
 NOTE: I only tested these instructions with a Huawei E3276, but they may very well work for some other modems from Huawei! I've heard that they are all very similar, possibly with the same chips inside.
