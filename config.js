@@ -33,10 +33,11 @@ module.exports = {
     contacts: {
       email: 'emailkurtis@gmail.com',
       telegram: '#',
-      twitter: 'kurtisharms',
+      twitter: '#',
       github: 'kurtisharms',
       rss: '#',
-      vkontakte: '#'
+      vkontakte: '#',
+      linkedin: 'kurtisharms'
     }
   }
 };
