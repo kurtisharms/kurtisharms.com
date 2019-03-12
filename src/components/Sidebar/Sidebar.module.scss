@@ -3,14 +3,28 @@
 
 .sidebar {
     width: 100%;
+    background: $color-white;
     &__inner {
         position: relative;
-        padding: 25px 20px 0;
+        padding: 5px;
     }
+
+    overflow: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 60px;
+    border-bottom: 1px solid $color-gray-border;
+    box-shadow: 1px 1px 4px 0 $color-gray-border;
 }
 
 @include breakpoint-sm {
     .sidebar {
+        position: relative;
+        height: auto;
+        border-bottom: none;
+        box-shadow: none;
+
         lost-column: 5/12;
         &__inner {
             padding: 30px 20px 0;
@@ -35,5 +49,6 @@
         &__inner {
             padding: 40px;
         }
+        
     }
 }

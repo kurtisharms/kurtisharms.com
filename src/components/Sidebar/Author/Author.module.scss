@@ -3,21 +3,24 @@
 
 .author {
   &__photo {
-    display: block; // the default was inline-block, but we need block for centering
+    display: inline-block; // the default was inline-block, but we need block for centering
     margin-bottom: 0;
     border-radius: 50%;
     background-clip: padding-box;
-    // center the image
-    margin-left: auto;
-    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
   }
 
   &__title {
-    font-size: $typographic-base-font-size * 1.125;
+    font-size: $typographic-base-font-size * 1.2;
     font-weight: 600;
     @include line-height(1.125);
     @include margin(.5, 0, .5, 0);
     text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
 
     &-link {
       color: $color-base;
@@ -34,8 +37,25 @@
   &__subtitle {
     color: $color-gray;
     @include line-height(1);
-    @include margin-bottom(1)
+    @include margin-bottom(1);
     text-align: justify;
   }
+}
 
+@include breakpoint-sm {
+  .author {
+    &__photo {
+      display: block;
+      // center the image
+      margin-left: auto;
+      margin-right: auto;
+      width: 90px;
+      height: 90px;
+    }
+
+    &__title {
+      margin-left: 0;
+      font-size: $typographic-base-font-size * 1.125;
+    }
+  }
 }

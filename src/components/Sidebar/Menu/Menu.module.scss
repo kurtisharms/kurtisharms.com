@@ -2,16 +2,56 @@
 @import '../../../assets/scss/mixins';
 
 .menu {
-  @include margin-bottom(1);
+
+  &__icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+
+    &-navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+
+    &-navicon:before, &-navicon:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+
+    &-navicon:before {
+      top: 5px;
+    }
+    
+    &-navicon:after {
+      top: -5px;
+    }
+  }
+
+  &__button {
+    display: none;
+    &:checked ~ .menu {
+      max-height: 240px;
+    }
+
+    // todo here from https://codepen.io/anon/pen/MxEXqx
+  }
 
   &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li:before {
-      content: "\2013  "; // equivalent to "ndash": https://css-tricks.com/snippets/html/glyphs/
-    }
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 
     &-item {
       padding: 0;
@@ -39,5 +79,55 @@
     }
 
   }
+}
 
+@include breakpoint-sm {
+  .menu {
+    @include margin-bottom(1);
+  
+    &__icon {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__list {
+      max-height: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li:before {
+        content: "\2013  "; // equivalent to "ndash": https://css-tricks.com/snippets/html/glyphs/
+      }
+  
+      &-item {
+        padding: 0;
+        margin: 10px 0;
+  
+        &-link {
+          font-size: $typographic-base-font-size;
+          color: $typographic-base-font-color;
+          font-weight: normal;
+          border: 0;
+  
+          &:hover,
+          &:focus {
+            color: $color-primary;
+            border-bottom: 1px solid $color-primary;
+          }
+  
+          &--active {
+            color: $color-base;
+            border-bottom: 1px solid $color-base;
+          }
+  
+        }
+  
+      }
+  
+    }
+  }
 }

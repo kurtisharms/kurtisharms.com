@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Sidebar from '../components/Sidebar';
 import Post from '../components/Post';
 
 const PostTemplate = ({ data }) => {
