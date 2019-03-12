@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://www.kurtisharms.com',
   title: 'Personal website of Kurtis Harms',
-  subtitle: 'I\'m a future lawyer and mechanical engineer making the very most out of life in Vancouver, Canada. All views expressed on this website are my own.',
+  subtitle: 'I\'m a trained mechanical engineer and future lawyer who is proud to call Vancouver, Canada home. All views expressed on this website are my own.',
   copyright: '© 2019 Kurtis Harms',
   disqusShortname: 'kurtisharms',
   postsPerPage: 5,
@@ -29,7 +29,7 @@ module.exports = {
   author: {
     name: 'Kurtis Harms',
     photo: '/photo.jpg',
-    bio: 'I\'m a future lawyer and mechanical engineer making the very most out of life in Vancouver, Canada. All views expressed on this website are my own.',
+    bio: 'I\'m a trained mechanical engineer and future lawyer who is proud to call Vancouver, Canada home. All views expressed on this website are my own.',
     contacts: {
       email: 'emailkurtis@gmail.com',
       telegram: '#',

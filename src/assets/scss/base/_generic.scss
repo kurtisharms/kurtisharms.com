@@ -196,3 +196,15 @@ table {
   }
 
 }
+
+// Solution for aligning images in markdown taken from https://stackoverflow.com/a/43691462
+img[src*='#left'] {
+  float: left;
+}
+img[src*='#right'] {
+  float: right;
+}
+img[src*='#center'] {
+  display: block;
+  margin: auto;
+}
