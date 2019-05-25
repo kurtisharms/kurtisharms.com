@@ -3,7 +3,24 @@ title: "Contact me"
 template: "page"
 ---
 
-## Under construction...
+Please send me a message using the form below and I will read and respond as soon as possible.
+
+<!-- Inspired from https://www.netlify.com/docs/form-handling/ -->
+<form name="contact" method="POST" data-netlify="true" action="/pages/contact-success">
+  <p>
+    <input type="text" name="name" placeholder="Your Name" />   
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Your email" />
+  </p>
+  <p>
+    <label>Message <br />
+    <textarea name="message" style="width:100%;height:300px;"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
 <!-- Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
 

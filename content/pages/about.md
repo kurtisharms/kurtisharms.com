@@ -3,9 +3,9 @@ title: "About me"
 template: "page"
 ---
 
-# Hi, my name is Kurtis...
+## Hi, my name is Kurtis...
 
-**I'm a trained mechanical engineer and future lawyer who is proud to call Vancouver, B.C., Canada home.** I love travelling and have had the opportunity to visit every Canadian province, the USA, England, Netherlands, Belgium, Germany, Luxembourg, Switzerland, France, Spain, Czech Republic, Croatia, Italy, Cuba, Mexico... and counting. But every time I return home to Vancouver I am reminded how fortunate I am to call this outdoor city home.
+**I'm a trained mechanical engineer and future lawyer who is proud to call Vancouver, B.C., Canada home.** I love travelling and have had the opportunity to visit every Canadian province, the USA, England, Netherlands, Belgium, Germany, Luxembourg, Switzerland, France, Spain, Czech Republic, Croatia, Italy, Hungary, Austria, Cuba, Mexico... and counting. But every time I return home to Vancouver I am reminded how fortunate I am to call this outdoor city home.
 
 ![Vancouver, Canada](/media/vancouver/vancouver5.jpg)
 
