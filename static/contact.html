@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Netlify Form Page</title>
+</head>
+<body>
+    <!-- Help for the Netlify post-processing bot -->
+    <form name="contact" method="post" action="/pages/contact-success" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <p style="display:none;">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+    <p>
+      <input type="text" name="name" placeholder="Your Name" /> 
+    </p>
+    <p>
+      <input type="email" name="email" placeholder="Your email" />
+    </p>
+    <p>
+      <label>Message <br />
+      <textarea name="message" style="width:100%;height:300px;"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</body>
+
+</html>
+
+

@@ -5,10 +5,18 @@ template: "page"
 
 Please send me a message using the form below and I will read and respond as soon as possible.
 
-<!-- Inspired from https://www.netlify.com/docs/form-handling/ -->
-<form name="contact" method="POST" data-netlify="true" action="/pages/contact-success">
+<!-- Sources:
+  https://www.netlify.com/docs/form-handling/
+  https://codebushi.com/form-handling-gatsby-netlify/
+  https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/
+ -->
+<form name="contact" method="post" action="/pages/contact-success" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  <p style="display:none;">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
   <p>
-    <input type="text" name="name" placeholder="Your Name" />   
+    <input type="text" name="name" placeholder="Your Name" /> 
   </p>
   <p>
     <input type="email" name="email" placeholder="Your email" />
