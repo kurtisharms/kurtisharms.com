@@ -1,3 +1,9 @@
+# KurtisHarms.com personal website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92c7d180-ec11-42b9-a180-2f9909bfa2d8/deploy-status)](https://app.netlify.com/sites/kurtisharms/deploys)
+
+# Information on Lumen starter for Gatsby
+
 <h1 align="center">
     <img alt="Lumen" title="Lumen" src="https://github.com/alxshelepenok/gatsby-starter-lumen/blob/gatsby-v2/.github/logo.png" width="140"> </br>
     Lumen
