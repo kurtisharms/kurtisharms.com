@@ -35,7 +35,7 @@
     color: $color-gray;
     @include line-height(1);
     @include margin-bottom(1)
-    text-align: justify;
+    text-align: left;
   }
 
 }

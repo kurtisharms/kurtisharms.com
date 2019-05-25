@@ -119,12 +119,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        modulePath: `${__dirname}/src/cms/index.js`,
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: siteConfig.googleAnalyticsId }
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [siteConfig.googleAnalyticsId],
+        pluginConfig: {
+          head: true,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -133,7 +138,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                url
+                siteUrl: url
               }
             }
             allSitePage(
@@ -151,7 +156,7 @@ module.exports = {
         `,
         output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
-          url: site.siteMetadata.url + edge.node.path,
+          url: site.siteMetadata.siteUrl + edge.node.path,
           changefreq: 'daily',
           priority: 0.7
         }))
@@ -180,6 +185,7 @@ module.exports = {
           camelCase: false,
         }
       }
-    }
+    },
+    'gatsby-plugin-flow',
   ]
 };
