@@ -28,7 +28,7 @@ module.exports = {
   ],
   author: {
     name: 'Kurtis Harms',
-    photo: '/photo.jpg',
+    photo: '/kurtis-harms.min.jpg',
     bio: 'I\'m a trained mechanical engineer and future lawyer who is proud to call Vancouver, Canada home. All views expressed on this website are my own.',
     contacts: {
       email: 'emailkurtis@gmail.com',

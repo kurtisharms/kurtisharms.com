@@ -171,7 +171,7 @@ module.exports = {
         background_color: '#fbfbfb', // uses off-white color
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/kurtis-harms.min.jpg'
       },
     },
     'gatsby-plugin-offline',
