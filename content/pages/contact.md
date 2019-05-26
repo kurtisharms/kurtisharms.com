@@ -16,14 +16,13 @@ Please send me a message using the form below and I will read and respond as soo
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
   <p>
-    <input type="text" name="name" placeholder="Your Name" /> 
+    <input type="text" name="name" placeholder="Your Name" required /> 
   </p>
   <p>
-    <input type="email" name="email" placeholder="Your email" />
+    <input type="email" name="email" placeholder="Your email" required />
   </p>
   <p>
-    <label>Message <br />
-    <textarea name="message" style="width:100%;height:300px;"></textarea></label>
+    <textarea name="message" style="width:100%;height:200px;" placeholder="Message" required></textarea>
   </p>
   <p>
     <button type="submit">Send</button>

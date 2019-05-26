@@ -180,6 +180,49 @@ table {
   padding-right: 14px !important;
 }
 
+// form formatting
+button {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 10px 20px;
+  border: none;
+  &:hover {
+    background: $color-secondary;
+    transition: 0.4s;
+  }
+  &:active {
+    background: darken($color-secondary, 25%);
+  }
+}
+
+input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  background-color: lighten($color-white, 10%);
+  border-bottom:1px solid $color-gray;
+  &:focus {
+    outline:none; border-bottom-color: $color-base;
+  }
+}
+
+textarea {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  background-color: lighten($color-white, 10%);
+  border:1px solid $color-gray;
+  &:focus {
+    outline:none; border-color: $color-base;
+  }
+}
+
+
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
